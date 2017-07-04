@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="SeedApp.Forms.Views.MenuPage">
+	<ContentPage.Content>
+		<Label
+			HorizontalOptions="Center"
+			VerticalOptions="Center"
+			Text="MenuPage"
+			FontSize="22"
+			FontAttributes="Bold"
+			HorizontalTextAlignment="Center" />
+	</ContentPage.Content>
+</ContentPage>
