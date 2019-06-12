@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SeedApp.Views.MenuPage" 
+             xmlns:control="clr-namespace:SeedApp.Controls;assembly=SeedApp"
+             xmlns:converter="clr-namespace:SeedApp.Converters;assembly=SeedApp"
+             xmlns:behavior="clr-namespace:SeedApp.Behaviors;assembly=SeedApp"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <RelativeLayout HorizontalOptions = "FillAndExpand"
+                VerticalOptions = "FillAndExpand">
+            <StackLayout HorizontalOptions = "FillAndExpand"
+                    VerticalOptions = "FillAndExpand"
+                    Orientation = "Vertical"
+                    BackgroundColor="{Binding BackgroundColor}" 
+                    RelativeLayout.XConstraint = "{ConstraintExpression Type=Constant,Constant=0}"
+                    RelativeLayout.YConstraint = "{ConstraintExpression Type=Constant,Constant=0}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1}">
+            <BoxView HeightRequest= "15" BackgroundColor = "Transparent"/>
+            <Image HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Source="mz_logo_bar.png" Aspect="Fill" />
+            <BoxView HeightRequest= "15" BackgroundColor = "Transparent"/>
+            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" BackgroundColor="Transparent">
+                <Label Text="S E E D A P P" BackgroundColor="Transparent" VerticalTextAlignment="Center" Margin="22,0,0,0" Font="Bold" FontSize="Medium" TextColor="White" />
+            </StackLayout> 
+            <BoxView HeightRequest= "15" BackgroundColor = "Transparent"/>
+                <ListView x:Name = "MenuListView"
+                        BackgroundColor = "Transparent"
+                        HasUnevenRows="false"
+                        SeparatorVisibility="None"
+                        RowHeight="50"
+                        SelectedItem = "{Binding SelectedMenuItem, Mode=TwoWay}"
+                        ItemsSource="{Binding MenuItems}"
+                        HorizontalOptions="FillAndExpand" 
+                        VerticalOptions="FillAndExpand">
+                    <ListView.Behaviors>
+                        <behavior:EventToCommandBehavior EventName="ItemSelected" 
+                            Command="{Binding SelectMenuItemCommand}" 
+                            Converter="{StaticResource SelectedItemConverter}" />
+                    </ListView.Behaviors>
+                </ListView>
+            </StackLayout>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

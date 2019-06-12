@@ -1,0 +1,3 @@
+﻿namespace SeedApp.Common.Utilities
+{
+}

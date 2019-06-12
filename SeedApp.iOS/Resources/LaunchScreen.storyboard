@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5k-f2-b5h">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+		<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gAE-YM-kbH">
+            <objects>
+                <viewController id="X5k-f2-b5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="LaunchScreens/Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9ZL-r4-8FZ" firstAttribute="top" secondItem="3" secondAttribute="bottom" id="SPE-id-mbM"/>
+                            <constraint firstItem="3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="nP4-ch-dM5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3" secondAttribute="trailing" constant="-20" id="ojC-us-XPA"/>
+                            <constraint firstItem="3" firstAttribute="top" secondItem="Y8P-hJ-Z43" secondAttribute="bottom" constant="-20" id="xFM-iK-IJg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreens/Default.png" width="320" height="480"/>
+        <image name="common_textview_frame.png" width="51" height="51"/>
+        <image name="ico_slide_menu.png" width="33" height="22"/>
+        <image name="ConnectReaderOverlay/ico_device.png" width="1410" height="488"/>
+        <image name="ConnectReaderOverlay/ico_pin.png" width="89" height="214"/>
+        <image name="ConnectReaderOverlay/ico_reader.png" width="866" height="729"/>
+        <image name="frame_back_padded.png" width="64" height="64"/>
+        <image name="frame_back.png" width="52.5" height="52.5"/>
+        <image name="ico_header_back.png" width="46" height="46"/>
+        <image name="ico_swipe_hand.png" width="561" height="400"/>
+        <image name="ico_swipe_reader.png" width="434" height="375"/>
+        <image name="ico_x.png" width="46" height="46"/>
+        <image name="ico_checkmark.png" width="195" height="161"/>
+        <image name="ico_logout.png" width="30" height="32"/>
+        <image name="ico_filter.png" width="22" height="22"/>
+        <image name="Checked.png" width="96" height="96"/>
+        <image name="Unchecked.png" width="100" height="100"/>
+        <image name="address_icon.png" width="35" height="35"/>
+        <image name="address_selected_icon.png" width="35" height="35"/>
+        <image name="user_icon.png" width="35" height="35"/>
+        <image name="user_selected_icon.png" width="35" height="35"/>
+        <image name="notes_icon.png" width="35" height="35"/>
+        <image name="notes_selected_icon.png" width="35" height="35"/>
+        <image name="ico_plus.png" width="32" height="32"/>
+        <image name="memberzone_logo.png" width="632" height="255"/>
+        <image name="mz_logo_bar.png" width="180" height="40"/>
+        <image name="appicon_rep_80x80.png" width="80" height="80"/>
+        <image name="moneyNotes.png" width="52" height="52"/>
+        <image name="LaunchScreens/Default_568h.png" width="320" height="568"/>
+        <image name="LaunchScreens/Default.png" width="320" height="480"/>
+		<image name="LaunchScreens/Default@2x.png" width="640" height="960"/>
+        <image name="ico_community_feeds.png" width="32" height="32"/>
+        <image name="ico_directory.png" width="38" height="30"/>
+        <image name="ico_events.png" width="38" height="30"/>
+        <image name="ico_home.png" width="39" height="30"/>
+        <image name="ico_referrals.png" width="32" height="32"/>
+        <image name="ico_setting.png" width="38" height="30"/>
+        <image name="ico_tasks.png" width="38" height="30"/>
+        <image name="logo.png" width="64" height="64"/>
+        <image name="ico_tools.png" width="32" height="32"/>
+        <image name="ico_events_black.png" width="32" height="32"/>
+        <image name="ico_membership.png" width="32" height="32"/>
+        <image name="ico_right_arrow.png" width="32" height="32"/>
+        <image name="ico_sad.png" width="32" height="32"/>
+        <image name="ico_smile.png" width="32" height="32"/>
+        <image name="ico_dot_selected.png" width="24" height="24"/>
+        <image name="ico_dot_unselected.png" width="24" height="24"/>
+    </resources>
+</document>

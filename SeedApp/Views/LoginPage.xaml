@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="SeedApp.Views.LoginPage"
+             xmlns:control="clr-namespace:SeedApp.Controls;assembly=SeedApp"
+             BackgroundColor="#3c8dbc">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3c8dbc" 
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="Center">
+    <StackLayout x:Name="headerStackLayout" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <Label Text="S E E D A P P" TextColor="White" Font="Roboto" FontSize="20" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start" />
+        <BoxView HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Transparent"></BoxView>
+    </StackLayout>
+ 
+<Frame Margin="7,-20,7,7" Padding="10,10,10,10" OutlineColor="#ecf0f5" HasShadow="false">
+<StackLayout Orientation="Vertical">
+            <Label BackgroundColor="Transparent" 
+                   TextColor="#3c8dbc" 
+                   FontSize="14" 
+                   HeightRequest="45" 
+                   WidthRequest="300" 
+                   HorizontalOptions="Center" 
+                   HorizontalTextAlignment="Center" 
+                   Font="Bold"
+                   Text="Account Login"/>
+            <control:CommonEntry x:Name="TxtUserName" 
+                                 HorizontalOptions="FillAndExpand" 
+                                 TextColor="#3c8dbc" 
+                                 HeightRequest="45" 
+                                 IsBorder="true" 
+                                 FontSize="12"
+                                 Text="{Binding UserName}" 
+                                 LeftImageSource="icon_user.png" 
+                                 HorizontalTextAlignment="Start" 
+                                 Placeholder="UserName" 
+                                 BackgroundColor="White"
+                                 Keyboard="Email"/>
+            <control:CommonEntry x:Name="TxtPassword" 
+                                 HorizontalOptions="FillAndExpand" 
+                                 TextColor="#3c8dbc" 
+                                 HeightRequest="45" 
+                                 FontSize="12"
+                                 IsBorder="true" 
+                                 Text="{Binding Password}" 
+                                 LeftImageSource="icon_password.png" 
+                                 HorizontalTextAlignment="Start" 
+                                 IsPassword="true" 
+                                 Placeholder="Password"
+                                 BackgroundColor="White" 
+                                 Keyboard="Text" />
+            <BoxView BackgroundColor="Transparent" 
+                     HeightRequest="20" />
+            <Button HorizontalOptions="Center" 
+                    VerticalOptions="Center" 
+                    BackgroundColor="#f39c12" 
+                    Text="LOGIN" 
+                    HeightRequest="50" 
+                    WidthRequest="200" 
+                    TextColor="White" 
+                    FontSize="14" 
+                    Command="{Binding LoginCommand}" />
+        </StackLayout>
+        </Frame>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

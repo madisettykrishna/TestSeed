@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="white_opaque">#3c8dbc</color>
+
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:actionBarSize">0dp</item>
+    <item name="colorPrimary">#3c8dbc</item>
+    <item name="colorPrimaryDark">#3c8dbc</item>
+    <item name="colorAccent">#3c8dbc</item>
+    <item name="windowActionModeOverlay">true</item>
+	<item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+  </style>
+
+  <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <item name="colorAccent">#3c8dbc</item>
+  </style>
+
+  <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+    <item name="spinBars">true</item>
+    <item name="color">@android:color/white</item>
+  </style>
+
+  <style name="Theme.Splash" parent="MainTheme.Base">
+    <item name="android:windowBackground">@drawable/Splash</item>
+    <item name="android:windowNoTitle">true</item>
+	<item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+
+	<style name="MyTheme" parent="MainTheme.Base"> 
+    <item name="android:windowNoTitle">true</item>
+	<item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:backgroundDimEnabled">true</item>
+  </style>
+ 
+</resources>
